@@ -13,3 +13,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+center {
+  width: 500px;
+  padding: 30px;
+  margin: 80px auto;
+  background-color: rgb(186, 243, 243);
+  box-shadow: 0 2px 3px rgb(0 0 0/12%), 0 2px 2px rgb(0 0 0/14%),
+    0 3px 2px rgb(0 0 0/20%);
+}
+
+ul {
+  list-style: none;
+}
+
+.text {
+  outline: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 8px;
+  background-color: rgba(255, 255, 255, 0.205);
+  padding: 4px;
+}
+
+.btn {
+  color: rgb(250, 64, 64);
+  cursor: pointer;
+}
+
+input:checked + span {
+  text-decoration: line-through red;
+}
