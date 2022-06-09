@@ -39,7 +39,7 @@ export const App = () => {
 
   return (
     <div>
-      <h1 className="title">Your Todo List</h1>
+      <h1 className="title">My Todo List</h1>
       <center>
         <InputField text={text} handleInput={setText} handleSubmit={addTodo} />
         <TodoList
