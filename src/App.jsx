@@ -38,13 +38,16 @@ export const App = () => {
   };
 
   return (
-    <center>
-      <InputField text={text} handleInput={setText} handleSubmit={addTodo} />
-      <TodoList
-        todos={todos}
-        toggleTodoComplited={toggleTodoComplited}
-        removeTodo={removeTodo}
-      />
-    </center>
+    <div>
+      <h1 className="title">Your Todo List</h1>
+      <center>
+        <InputField text={text} handleInput={setText} handleSubmit={addTodo} />
+        <TodoList
+          todos={todos}
+          toggleTodoComplited={toggleTodoComplited}
+          removeTodo={removeTodo}
+        />
+      </center>
+    </div>
   );
 };

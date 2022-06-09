@@ -20,10 +20,20 @@ code {
     monospace;
 }
 
+.title {
+  color: rgb(143, 1, 1);
+  text-align: center;
+  font-size: 70px;
+  font-weight: 1000;
+  margin: 0;
+  margin-top: 40px;
+  text-shadow: 3px 2px 1px black;
+}
+
 center {
   width: 500px;
   padding: 30px;
-  margin: 80px auto;
+  margin: 40px auto;
   background-color: rgba(82, 82, 82, 0.514);
   box-shadow: 0 2px 3px rgb(0 0 0/12%), 0 2px 2px rgb(0 0 0/14%),
     0 3px 2px rgb(0 0 0/20%);
@@ -35,8 +45,11 @@ ul {
 }
 
 .text {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
   outline: none;
-  width: 395px;
+  width: 390px;
   padding: 5px;
   font-size: 18px;
 }
@@ -51,6 +64,10 @@ li {
   font-size: 18px;
 }
 
+.todo {
+  text-align: center;
+}
+
 .btn {
   color: rgb(202, 0, 0);
   cursor: pointer;
@@ -61,11 +78,15 @@ input:checked + span {
 }
 
 button {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
   background-color: rgb(202, 0, 0);
   color: #fff;
-  padding: 6px 10px;
+  padding: 8px 12px;
   margin-left: 10px;
   cursor: pointer;
+  transform: translate(0%, -7%);
 }
 
 button:hover {

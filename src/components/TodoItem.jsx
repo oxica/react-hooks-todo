@@ -9,7 +9,7 @@ const TodoItem = ({ id, text, complited, toggleTodoComplited, removeTodo }) => {
         key={id}
         onChange={() => toggleTodoComplited(id)}
       />
-      <span>{text}</span>
+      <span className="todo">{text}</span>
       <span className="btn" onClick={() => removeTodo(id)}>
         &times;
       </span>
