@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import { InputField } from './InputField';
-import { TodoList } from './TodoList';
+import { InputField } from './components/InputField';
+import { TodoList } from './components/TodoList';
 
 export const App = () => {
   const [todos, setTodos] = useState([]);
   const [text, setText] = useState('');
 
-  const AddTodo = () => {
+  const addTodo = () => {
     if (text.trim().length) {
       setTodos([
         ...todos,
@@ -39,7 +39,7 @@ export const App = () => {
 
   return (
     <center>
-      <InputField text={text} setText={setText} AddTodo={AddTodo} />
+      <InputField text={text} handleInput={setText} handleSubmit={addTodo} />
       <TodoList
         todos={todos}
         toggleTodoComplited={toggleTodoComplited}

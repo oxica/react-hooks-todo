@@ -1,17 +1,12 @@
 import React from 'react';
 
-export const TodoItem = ({
-  id,
-  text,
-  complited,
-  toggleTodoComplited,
-  removeTodo,
-}) => {
+const TodoItem = ({ id, text, complited, toggleTodoComplited, removeTodo }) => {
   return (
     <li>
       <input
         type="checkbox"
         checked={complited}
+        key={id}
         onChange={() => toggleTodoComplited(id)}
       />
       <span>{text}</span>
@@ -21,3 +16,5 @@ export const TodoItem = ({
     </li>
   );
 };
+
+export default TodoItem;
